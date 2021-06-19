@@ -25,7 +25,7 @@ from common.params import Params
 from cereal.services import service_list
 from selfdrive.swaglog import cloudlog
 
-ATHENA_HOST = os.getenv('ATHENA_HOST', 'wss://athena.comma.ai')
+ATHENA_HOST = os.getenv('ATHENA_HOST', 'wss://api.retropilot.org:4040')
 HANDLER_THREADS = os.getenv('HANDLER_THREADS', 4)
 LOCAL_PORT_WHITELIST = set([8022])
 
