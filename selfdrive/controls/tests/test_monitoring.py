@@ -8,6 +8,12 @@ from selfdrive.controls.lib.driver_monitor import DriverStatus, MAX_TERMINAL_ALE
                                   _POSESTD_THRESHOLD, _HI_STD_TIMEOUT
 from selfdrive.controls.lib.gps_helpers import is_rhd_region
 
+
+# Custom adaption for testing
+_MAX_TERMINAL_ALERTS = 3
+_DISTRACTED_TIME = 11.
+_AWARENESS_TIME = 70.
+
 _TEST_TIMESPAN = 120 # seconds
 _DISTRACTED_SECONDS_TO_ORANGE = _DISTRACTED_TIME - _DISTRACTED_PROMPT_TIME_TILL_TERMINAL + 1
 _DISTRACTED_SECONDS_TO_RED = _DISTRACTED_TIME + 1
